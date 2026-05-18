@@ -12,7 +12,7 @@ import { useDispatch } from 'react-redux'
 import { setUserData } from './redux/userSlice'
 import axios from 'axios'
 axios.defaults.withCredentials= true
-export const ServerUrl="http://localhost:8000"
+export const ServerUrl="https://ai-mern-project-5j2q.onrender.com"
 function App() {
   const dispatch= useDispatch()
   useEffect(()=>{
