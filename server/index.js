@@ -10,11 +10,12 @@ import InterviewRouter from "./routes/interview.route.js"
 import paymentRouter from "./routes/payment.route.js"
 
 const app= express()
+app.set("trust proxy",1)
 app.use(cors({
     origin:"https://ai-mern-project-client.onrender.com",
     credentials:true
 }))
-""
+
 app.use(express.json())
 app.use(cookieParser())
 
